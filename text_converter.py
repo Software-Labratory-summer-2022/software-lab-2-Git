@@ -13,6 +13,9 @@ def replace_emoji(message):
         ':(': ':disappointed_face:',
         ';)': ':winking_face:',
         ':D': ':grinning_face_with_big_eyes:',
+        ':-/': ':confused_face:',
+        '">': ':grinning_face_with_sweat:',
+        'P': ':face_with_tongue:'
     }
     # This replace replacing pattern that defined in char_emojis
     message = dictinary_replacing(message, char_emojis)
