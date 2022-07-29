@@ -1,2 +1,3 @@
 sanic==22.6.0
 aiohttp==3.8.1
+emoji==2.0.0
