@@ -17,4 +17,5 @@ def get_response(message):
         if script in DEFINED_SCRIPTES:
             yield DEFINED_SCRIPTES[script]
     else:
+        message = text_converter.change_digits_to_persian(message)
         yield message
