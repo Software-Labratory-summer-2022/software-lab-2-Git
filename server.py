@@ -1,17 +1,17 @@
-import json
 import asyncio
+import json
 
 from sanic import Sanic, response
 from websockets.exceptions import ConnectionClosed
 
 import AI
 
-app = Sanic()
+app = Sanic("software-lab2-git")
 
 
 @app.route("/")
 async def test(request):
-        return await response.file('./static/index.html')
+    return await response.file('./static/index.html')
 
 
 @app.websocket('/chat')
